@@ -31,7 +31,7 @@ body {
             color: #61dafb;
         }
 
-        input[type="text"], input[type="file"] {
+        input[type="text"], input[type="file"], input[type="number"] {
             width: calc(100% - 22px);
             padding: 8px;
             margin-bottom: 0px;
@@ -50,7 +50,7 @@ body {
             border-radius: 5px;
             font-size: 14px;
             transition: background-color 0.3s;
-            width: 100px;
+            width: 200px;
         }
 
         button:hover {

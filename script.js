@@ -42,6 +42,7 @@ let stopFlag = false;
 
             const fileUserInput = document.getElementById('userlist');
             const filePassInput = document.getElementById('passlist');
+            const delay = parseInt(document.getElementById('delay').value, 10) || 0;
 
             const userlist = await readUploadedFile(fileUserInput);
             const passlist = await readUploadedFile(filePassInput);
@@ -80,7 +81,7 @@ let stopFlag = false;
                     scrollToBottom(outputTextArea);
 
                     // Check the stop flag every 1000 milliseconds
-                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    await new Promise(resolve => setTimeout(resolve, delay));
                 }
             }
 
