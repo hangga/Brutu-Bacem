@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutu Bacem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+    <h2>Brutu Bacem</h2>
+    <p>A simple tool for brute-forcing login pages</p>-->
+    <a
+        class="support-palestine"
+        href="https://lazismu.org/bantupalestina/donate?utm_source=desktop-sticky-cta"
+        target="_blank"
+        rel="nofollow noopener"
+        title="Donate to support palestine"
+    >
+        <div
+            class="support-palestine__flag"
+            role="img"
+            aria-label="Flag of palestine"
+        >
+            <div class="background">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="triangle"></div>
+            </div>
+        </div>
+        <div class="support-palestine__label">Donate to support Palestine</div>
+    </a>
+    <header>
+        <img src="brutu-bacem-high-resolution-logo-transparent.png" alt="Logo">
+    </header>
+    
+    <div class="flex-container">
+        <label for="website">Target login page (http/https only. Search with Google Dork. <a target="_blank" href="https://www.google.com/search?q=inurl%3A+%22admin%22+%22co.il%22">Example</a> ):</label>
+        
+        <input type="text" id="website" placeholder="Enter target URL (e.g., http://example.com)" />
+
+        <div class="input-group">
+            <label for="usersel">Username selector:</label>
+            <label for="passsel">Password selector:</label>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="usersel" placeholder="Enter username selector" />
+            <input type="text" id="passsel" placeholder="Enter password selector" />
+        </div>
+
+        <div class="input-group">
+            <label for="userlist">Username Wordlist:</label>
+            <label for="passlist">Password Wordlist:</label>
+        </div>
+        
+        <div class="input-group">
+            <input type="file" id="userlist" accept=".txt" />
+            <input type="file" id="passlist" accept=".txt" />
+        </div>
+        <textarea id="output" rows="8" readonly></textarea>
+        <div class="flex-container">
+            <button id="startBtn" onclick="startBruteForce()">Start</button>
+            <button id="stopBtn" onclick="stopBruteForce()" style="display: none;">Stop</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>This tool is intended for educational purposes and penetration testing only. Unauthorized use for malicious purposes is strictly prohibited.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

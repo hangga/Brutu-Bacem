@@ -1,0 +1,209 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: small;
+            background-color: #282c34;
+            color: #abb2bf;
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2, p {
+            color: #61dafb;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            max-width: 240px;
+            height: auto;
+        }
+
+        label {
+            width: calc(100% - 22px);
+            display: block;
+            margin: 0px 0;
+            color: #61dafb;
+        }
+
+        input[type="text"], input[type="file"] {
+            width: calc(100% - 22px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            background-color: #444;
+            color: #fff;
+            border: 1px solid #61dafb;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 8px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: #4fa3d1;
+        }
+
+        #startBtn {
+            background-color: #4fa3d1;
+            color: #000;
+        }
+
+        #stopBtn {
+            background-color: red;
+            color: #fff;
+        }
+
+        textarea {
+            /*width: calc(100% - 22px);*/
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            display: none;
+            background-color: #282c34;
+            color: #00ff00;
+            border: 1px solid #61dafb;
+            border-radius: 5px;
+            overflow-y: scroll;
+            height: 150px;
+            outline: none;
+        }
+
+        textarea:focus {
+            border-color: #61dafb;
+        }
+
+        
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: #888;
+            background-color: #282c34;
+            padding: 10px;
+        }
+
+        a {
+            color: #4fa3d1;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            min-width: 700px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            width: calc(100% - 22px);
+        }
+
+        .file-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: calc(100% - 22px);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            color: #61dafb;
+            margin: 5px 0;
+        }
+
+        header p {
+            color: #61dafb;
+            margin: 5px 0;
+        }
+
+        .support-palestine,
+        .support-palestine:visited {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            background: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            z-index: 10000;
+            text-decoration: none;
+            font-family: arial;
+        }
+        .support-palestine:hover,
+        .support-palestine:active {
+            background: black;
+            display: flex;
+            background: rgb(80, 80, 80);
+            text-decoration: none;
+        }
+        .support-palestine__flag {
+            margin-right: 10px;
+        }
+
+        .support-palestine__label {
+            color: white;
+            font-size: 12px;
+            line-height: 24px;
+        }
+        .background {
+            background: darkgreen;
+
+            height: 21px;
+        }
+        .top {
+            background: black;
+            width: 40px;
+            height: 8px;
+            z-index: 1;
+        }
+        .middle {
+            background: white;
+            width: 100%;
+            height: 8px;
+            z-index: 1;
+        }
+        .triangle {
+            background: auto;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 20px solid red;
+            z-index: 2;
+            position: relative;
+            top: -16px;
+            left: 0;
+        }
