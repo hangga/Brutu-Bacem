@@ -20,7 +20,7 @@ Brutu Bacem is a GUI tool to brute force web login pages for testing purposes.
   ```
   In this case, usersel might be `#usernameInput` and passsel might be `#passwordInput`. This tells the program that the **username** input element is identified with the ID `usernameInput` and the **password** input element is identified with the ID `passwordInput`. You need to adjust the selector according to the HTML structure of the actual login page you want to attack.
 
-- Use the wordlist that you have. You can search on github.
+- Use the wordlist that you have. You can search on <a href="https://github.com/topics/password-list?o=desc&s=updated"> Github</a>.
 - Determine delay and Start.
 - Don't forget to use a proxy.
 
