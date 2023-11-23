@@ -207,3 +207,11 @@ body {
             top: -16px;
             left: 0;
         }
+
+        #output {
+            color: #00ff00; /* Default color for other text */
+        }
+
+        #output.error {
+            color: red; /* Set color to red for text containing 'Error' */
+        }
