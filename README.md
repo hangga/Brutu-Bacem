@@ -5,7 +5,7 @@ Brutu Bacem is a GUI tool to brute force web login pages for testing purposes.
 <img width="700px" src="https://github.com/hangga/Brutu-Bacem/blob/main/brutu-baem-web-blur.png?raw=true"/>
 
 ## Tips and How to Use
-- Searching for targets. You can use Google Dork.
+- Searching for targets. You can use Google Dork. <a target="_blank" href="https://www.google.com/search?q=inurl%3A+%22admin%22+%22co.il%22">Example</a>.
 - Inspect the element to find the input selector.
  
   **Example of using selectors in HTML:**
