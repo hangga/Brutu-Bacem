@@ -31,10 +31,10 @@ body {
             color: #61dafb;
         }
 
-        input[type="text"], input[type="file"] {
+        input[type="text"], input[type="file"], input[type="number"] {
             width: calc(100% - 22px);
             padding: 8px;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
             box-sizing: border-box;
             background-color: #444;
             color: #fff;
@@ -50,7 +50,7 @@ body {
             border-radius: 5px;
             font-size: 14px;
             transition: background-color 0.3s;
-            width: 100px;
+            width: 200px;
         }
 
         button:hover {
@@ -206,4 +206,12 @@ body {
             position: relative;
             top: -16px;
             left: 0;
+        }
+
+        #output {
+            color: #00ff00; /* Default color for other text */
+        }
+
+        #output.error {
+            color: red; /* Set color to red for text containing 'Error' */
         }

@@ -42,6 +42,7 @@ let stopFlag = false;
 
             const fileUserInput = document.getElementById('userlist');
             const filePassInput = document.getElementById('passlist');
+            const delay = parseInt(document.getElementById('delay').value, 10) || 0;
 
             const userlist = await readUploadedFile(fileUserInput);
             const passlist = await readUploadedFile(filePassInput);
@@ -75,10 +76,12 @@ let stopFlag = false;
                         console.error('Error:', error);
                         outputTextArea.value += `Username: ${username}, Password: ${password} - Error: ${error.message}\n`;
                     }
+
+                
                     scrollToBottom(outputTextArea);
 
-                    // Check the stop flag every 100 milliseconds
-                    await new Promise(resolve => setTimeout(resolve, 100));
+                    // Check the stop flag every 1000 milliseconds
+                    await new Promise(resolve => setTimeout(resolve, delay));
                 }
             }
 
@@ -139,3 +142,13 @@ let stopFlag = false;
                 throw error;
             }
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const outputTextArea = document.getElementById('output');
+            
+            // Memeriksa apakah teks mengandung kata "Error" dan menetapkan warna sesuai
+            if (outputTextArea.textContent.includes('Error')) {
+                outputTextArea.style.color = 'red';
+            }
+        });
+        

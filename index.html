@@ -35,10 +35,11 @@
     </header>
     
     <div class="flex-container">
-        <label for="website">Target login page (http/https only. Search with Google Dork. <a target="_blank" href="https://www.google.com/search?q=inurl%3A+%22admin%22+%22co.il%22">Example</a> ):</label>
+        <label for="website">Target login page (http/https only).</label>
         
         <input type="text" id="website" placeholder="Enter target URL (e.g., http://example.com)" />
-
+        <label for="website">You can search with Google Dork. <a target="_blank" href="https://www.google.com/search?q=inurl%3A+%22admin%22+%22co.il%22">Example</a></label>
+        <br/>
         <div class="input-group">
             <label for="usersel">Username selector:</label>
             <label for="passsel">Password selector:</label>
@@ -48,6 +49,12 @@
             <input type="text" id="usersel" placeholder="Enter username selector" />
             <input type="text" id="passsel" placeholder="Enter password selector" />
         </div>
+        <br/>
+        <!--
+        <div class="input-group">
+            <label for="userlist">You can search for the latest GitHub topics <a href="https://github.com/topics/password-list?o=desc&s=updated"> Example</a></label>
+        </div>
+    -->
 
         <div class="input-group">
             <label for="userlist">Username Wordlist:</label>
@@ -58,10 +65,20 @@
             <input type="file" id="userlist" accept=".txt" />
             <input type="file" id="passlist" accept=".txt" />
         </div>
+        <label for="userlist">You can search for the latest <a target="_blank" href="https://github.com/topics/password-list?o=desc&s=updated"> GitHub topics</a></label>
+        
         <textarea id="output" rows="8" readonly></textarea>
-        <div class="flex-container">
+        <!--
+        <div class="input-group" style="text-align: left;">
+            <label for="delay">Delay (ms):</label>
+            <input type="number" id="delay" placeholder="Enter delay in milliseconds" value="500" />
+        </div>-->
+        <div class="input-group" style="text-align: right;">
+            <label for="delay">Delay (ms):</label>
+            <input style="width: 90px;" type="number" id="delay" placeholder="Enter delay in milliseconds" value="500" />
             <button id="startBtn" onclick="startBruteForce()">Start</button>
             <button id="stopBtn" onclick="stopBruteForce()" style="display: none;">Stop</button>
+            
         </div>
     </div>
 
