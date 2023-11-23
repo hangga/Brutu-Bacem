@@ -30,5 +30,67 @@ Brutu Bacem is a GUI tool to brute force web login pages for testing purposes.
 4. Determine delay and Start.
 5. Don't forget to use a proxy.
 
+## How this Work
+```
+┌───────────────────────────────┐     ┌───────────────────────┐     ┌────────────────────┐
+│                               │     │                       │     │                    │
+│   startBruteForce Function    │     │   getRandomUserAgent  │     │   authenticate    │
+│                               │     │                       │     │                    │
+└───────────────┬───────────────┘     └───────────────────────┘     └────────────────────┘
+                │                               │                               │
+                │                               │                               │
+                │                               │                               │
+                │                               │                               │
+                ▼                               ▼                               ▼
+       ┌──────────────────┐          ┌────────────────────┐          ┌────────────────────┐
+       │                  │          │                    │          │                    │
+       │   Loop through   │          │   Select random    │          │   Send HTTP POST   │
+       │   User List      │          │   User-Agent from   │          │   Request to the   │
+       │                  │          │   User-Agents List  │          │   specified URL    │
+       └──────────────────┘          └────────────────────┘          └────────────────────┘
+                │                               │                               │
+                │                               │                               │
+                │                               │                               │
+                │                               │                               │
+                ▼                               ▼                               │
+       ┌──────────────────┐          ┌────────────────────┐                   │
+       │                  │          │                    │                   │
+       │ Loop through     │          │   Return random    │                   │
+       │ Password List    │          │   User-Agent       │                   │
+       │                  │          └────────────────────┘                   │
+       └──────────────────┘                              │                   │
+                │                                        │                   │
+                │                                        │                   │
+                │                                        │                   │
+                │                                        ▼                   │
+                │                               ┌────────────────────┐      │
+                │                               │                    │      │
+                └──────────────────────────────▶   Update UI with   │      │
+                                                │   Authentication   │      │
+                                                │   Results          │      │
+                                                └────────────────────┘      │
+                                                         │                   │
+                                                         │                   │
+                                                         │                   │
+                                                         ▼                   │
+                                                ┌────────────────────┐      │
+                                                │                    │      │
+                                                │   Check Stop Flag  │◀─────┤
+                                                │   and Delay        │      │
+                                                └────────────────────┘      │
+                                                         │                   │
+                                                         │                   │
+                                                         │                   │
+                                                         ▼                   │
+                                                ┌────────────────────┐      │
+                                                │                    │      │
+                                                │   Continue Loop    │◀─────┤
+                                                │   or Break if Stop │      │
+                                                └────────────────────┘      │
+                                                         │                   │
+                                                         └───────────────────┘
+
+```
+
 ## Disclaimer
 This tool is intended for educational purposes and penetration testing only. Unauthorized use for malicious purposes is strictly prohibited.
