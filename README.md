@@ -9,7 +9,9 @@ Brutu Bacem is a GUI tool to brute force web login pages for testing purposes.
 <p align="center">
    <img width="700px" src="https://github.com/hangga/Brutu-Bacem/blob/main/brutu-baem-web-blur.png?raw=true"/>
 </p>
+
 ## How this Work
+
 ```
 ┌───────────────────────────────┐     ┌───────────────────────┐     ┌────────────────────┐
 │                               │     │                       │     │                    │
