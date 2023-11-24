@@ -15,7 +15,7 @@ Brutu Bacem is a GUI tool to brute force web login pages for testing purposes.
 ```
 ┌───────────────────────────────┐     ┌───────────────────────┐     ┌────────────────────┐
 │                               │     │                       │     │                    │
-│   startBruteForce Function    │     │   getRandomUserAgent  │     │   authenticate    │
+│   startBruteForce Function    │     │   getRandomUserAgent  │     │   authenticate     │
 │                               │     │                       │     │                    │
 └───────────────┬───────────────┘     └───────────────────────┘     └────────────────────┘
                 │                               │                               │
@@ -26,50 +26,50 @@ Brutu Bacem is a GUI tool to brute force web login pages for testing purposes.
        ┌──────────────────┐          ┌────────────────────┐          ┌────────────────────┐
        │                  │          │                    │          │                    │
        │   Loop through   │          │   Select random    │          │   Send HTTP POST   │
-       │   User List      │          │   User-Agent from   │          │   Request to the   │
-       │                  │          │   User-Agents List  │          │   specified URL    │
+       │   User List      │          │   User-Agent from  │          │   Request to the   │
+       │                  │          │   User-Agents List │          │   specified URL    │
        └──────────────────┘          └────────────────────┘          └────────────────────┘
                 │                               │                               │
                 │                               │                               │
                 │                               │                               │
                 │                               │                               │
                 ▼                               ▼                               │
-       ┌──────────────────┐          ┌────────────────────┐                   │
-       │                  │          │                    │                   │
-       │ Loop through     │          │   Return random    │                   │
-       │ Password List    │          │   User-Agent       │                   │
-       │                  │          └────────────────────┘                   │
-       └──────────────────┘                              │                   │
-                │                                        │                   │
-                │                                        │                   │
-                │                                        │                   │
-                │                                        ▼                   │
-                │                               ┌────────────────────┐      │
-                │                               │                    │      │
-                └──────────────────────────────▶   Update UI with   │      │
-                                                │   Authentication   │      │
-                                                │   Results          │      │
-                                                └────────────────────┘      │
-                                                         │                   │
-                                                         │                   │
-                                                         │                   │
-                                                         ▼                   │
-                                                ┌────────────────────┐      │
-                                                │                    │      │
-                                                │   Check Stop Flag  │◀─────┤
-                                                │   and Delay        │      │
-                                                └────────────────────┘      │
-                                                         │                   │
-                                                         │                   │
-                                                         │                   │
-                                                         ▼                   │
-                                                ┌────────────────────┐      │
-                                                │                    │      │
-                                                │   Continue Loop    │◀─────┤
-                                                │   or Break if Stop │      │
-                                                └────────────────────┘      │
-                                                         │                   │
-                                                         └───────────────────┘
+       ┌──────────────────┐          ┌────────────────────┐                     │
+       │                  │          │                    │                     │
+       │ Loop through     │          │   Return random    │                     │
+       │ Password List    │          │   User-Agent       │                     │
+       │                  │          └────────────────────┘                     │
+       └──────────────────┘                              │                      │
+                │                                        │                      │
+                │                                        │                      │
+                │                                        │                      │
+                │                                        ▼                      │
+                │                               ┌────────────────────┐          │
+                │                               │                    │          │
+                └──────────────────────────────▶   Update UI with   │          │
+                                                │   Authentication   │          │
+                                                │   Results          │          │
+                                                └────────────────────┘          │
+                                                         │                      │
+                                                         │                      │
+                                                         │                      │
+                                                         ▼                      │
+                                                ┌────────────────────┐          │
+                                                │                    │          │
+                                                │   Check Stop Flag  │◀────────┤
+                                                │   and Delay        │          │
+                                                └────────────────────┘          │
+                                                         │                      │
+                                                         │                      │
+                                                         │                      │
+                                                         ▼                      │
+                                                ┌────────────────────┐          │
+                                                │                    │          │
+                                                │   Continue Loop    │◀────────┤
+                                                │   or Break if Stop │          │
+                                                └────────────────────┘          │
+                                                         │                      │
+                                                         └──────────────────────┘
 
 ```
 
