@@ -93,5 +93,8 @@ Brutu Bacem is a GUI tool to brute force web login pages for testing purposes.
 4. Determine delay and Start.
 5. Don't forget to use a proxy.
 
+## Demo
+- https://hangga.github.io/Brutu-Bacem/
+
 ## Disclaimer
 This tool is intended for educational purposes and penetration testing only. Unauthorized use for malicious purposes is strictly prohibited.
