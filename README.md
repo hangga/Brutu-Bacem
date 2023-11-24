@@ -4,6 +4,14 @@
 
 Brutu Bacem is a GUI tool to brute force web login pages for testing purposes.
 
+## Philosophy  
+
+The author uses this term because he likes Brutu Bacem, which is a Javanese term that refers to a traditional dish from Central Java, Indonesia. "Brutu" refers to chicken buttocks cooked with typical Javanese spices, while "bacem" refers to a cooking method that involves simmering chicken buttocks for a long time in rich spices.
+
+Brutu bacem is made from chicken butt cooked with spices consisting of grated coconut, lemongrass, lime leaves, galangal, brown sugar, salt and other spices which give it a distinctive and fragrant taste. The long cooking process makes the chicken butt tender and the spices absorb well.
+
+This dish is usually served as a side dish with white rice. Brutu bacem is an example of a dish that reflects the traditional richness of Indonesian culinary delights, especially from the Java region.
+
 ## Screnshot
 
 <p align="center">
