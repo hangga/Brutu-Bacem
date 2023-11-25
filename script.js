@@ -76,7 +76,15 @@ let stopFlag = false;
                         console.error('Error:', error);
                         outputTextArea.value += `Username: ${username}, Password: ${password} - Error: ${error.message}\n`;
                     }
-
+                    
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const outputTextArea = document.getElementById('output');
+                        
+                        // Memeriksa apakah teks mengandung kata "Error" dan menetapkan warna sesuai
+                        if (outputTextArea.textContent.includes('Error')) {
+                            outputTextArea.style.color = 'red';
+                        }
+                    });
                 
                     scrollToBottom(outputTextArea);
 
@@ -143,12 +151,5 @@ let stopFlag = false;
             }
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const outputTextArea = document.getElementById('output');
-            
-            // Memeriksa apakah teks mengandung kata "Error" dan menetapkan warna sesuai
-            if (outputTextArea.textContent.includes('Error')) {
-                outputTextArea.style.color = 'red';
-            }
-        });
+        
         
