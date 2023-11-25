@@ -209,9 +209,37 @@ body {
         }
 
         #output {
-            color: #00ff00; /* Default color for other text */
+            /*height: 300px;*/
+            overflow: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            display: none;
+            background-color: #282c34;
+            color: #fff;
+            border: 1px solid #61dafb;
+            border-radius: 5px;
+            overflow-y: scroll;
+            height: 150px;
+            outline: none;
         }
 
-        #output.error {
-            color: red; /* Set color to red for text containing 'Error' */
+        .error-text {
+            color: red;
+            font-weight: bold; /* Optional: Make the text bold */
+        }
+
+        .success-text {
+            color: #00ff00;
+            font-weight: bold; /* Optional: Make the text bold */
+        }
+
+        .param-text {
+            color: yellow;
+            font-weight: bold; /* Optional: Make the text bold */
         }
